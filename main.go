@@ -6,12 +6,11 @@ import (
 )
 
 func defaultHandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "<h1>Hello from Cisco Shipped!</h1>\n")
+    fmt.Fprintf(w, "<h1>Hello from Cisco Shipped Sascha123!</h1>\n")
 }
 
 func main() {
     http.HandleFunc("/", defaultHandler)
     fmt.Println("Example app listening at http://localhost:8888")
-    fmt.Println("Hello, world.\n")
     http.ListenAndServe(":8888", nil)
 }
