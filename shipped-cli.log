@@ -1,0 +1,103 @@
+TRACE 2016/07/05 11:05:17.399571 logfile.go:52: Now archiving log output to /Users/sthellwi/Check123/corecheck123/shipped-cli.log
+TRACE 2016/07/05 11:05:17.399675 config.go:100: .shipped directory already exists
+TRACE 2016/07/05 11:05:17.399688 config.go:109: Config file .shipped/shipped.ini already exists in /Users/sthellwi
+TRACE 2016/07/05 11:05:17.399760 config.go:139: Using config file /Users/sthellwi/.shipped/shipped.ini
+TRACE 2016/07/05 11:05:17.399820 main.go:185: CLI start directory is /Users/sthellwi/Check123/corecheck123
+TRACE 2016/07/05 11:05:17.399860 config.go:139: Using config file /Users/sthellwi/Check123/corecheck123/.shipped/shipped.ini
+TRACE 2016/07/05 11:05:17.399895 config.go:148: Also using project config file /Users/sthellwi/Check123/.shipped/shipped.ini
+TRACE 2016/07/05 11:05:17.399916 config.go:158: Also using home config file /Users/sthellwi/.shipped/shipped.ini
+TRACE 2016/07/05 11:05:17.403358 utils.go:98: Console width is 80; help width is 79
+TRACE 2016/07/05 11:05:17.403432 client.go:114: GET https://api.ciscoshipped.io/users/current?api_token=ofDhyDNpByutmmaulEmstYrtCfPVxmgp
+TRACE 2016/07/05 11:05:18.000549 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/07/05 11:05:18.001363 memdb.go:88: MemDB shipped.db: Opened /var/lib/Cisco/shipped/shipped.db
+TRACE 2016/07/05 11:05:18.001389 shipdb.go:95: Opened database shipped.db on behalf of user sthellwi on server https://api.ciscoshipped.io
+TRACE 2016/07/05 11:05:18.001400 schema.go:89: Defined schema for multi-row table shipped.db.buildpacks with columns buildpackID, name
+TRACE 2016/07/05 11:05:18.001515 memdb.go:281: MemDB shipped.db: Updated _schema.buildpacks=0x7b225461626c65...
+TRACE 2016/07/05 11:05:18.001885 schema.go:89: Defined schema for multi-row table shipped.db.environments with columns environmentID, name
+TRACE 2016/07/05 11:05:18.001941 memdb.go:281: MemDB shipped.db: Updated _schema.environments=0x7b225461626c65...
+TRACE 2016/07/05 11:05:18.002279 schema.go:89: Defined schema for multi-row table shipped.db.ports with columns portnum, projectID, serviceID
+TRACE 2016/07/05 11:05:18.002318 memdb.go:281: MemDB shipped.db: Updated _schema.ports=0x7b225461626c65...
+TRACE 2016/07/05 11:05:18.002672 schema.go:89: Defined schema for multi-row table shipped.db.projects with columns serviceRepoIDs, projectID, name
+TRACE 2016/07/05 11:05:18.002717 memdb.go:281: MemDB shipped.db: Updated _schema.projects=0x7b225461626c65...
+TRACE 2016/07/05 11:05:18.003175 schema.go:89: Defined schema for multi-row table shipped.db.services with columns user, name, apiServer, portnum, projectID, serviceID
+TRACE 2016/07/05 11:05:18.003225 memdb.go:281: MemDB shipped.db: Updated _schema.services=0x7b225461626c65...
+TRACE 2016/07/05 11:05:18.003665 main.go:150: Shipped-cli 1.0 b191 20160512 161620 starting with args struct { ConfigFile string; ConsoleMode bool; Debug bool; Expanded bool; FastBootstrap bool; Force bool; Full bool; Help bool; Json bool; Latest bool; LocalDocker bool; Logs bool; Logfile string; MockSDKClient bool; NoHdr bool; OutputFields string; RunAsRootOK bool; ShippedHome string; ShowIDs bool; ShowVersion bool; Server string; Token string; VM string; Watch int; ObjType string; Command string; Arguments []string }{ConfigFile:"", ConsoleMode:false, Debug:false, Expanded:true, FastBootstrap:false, Force:false, Full:false, Help:false, Json:false, Latest:false, LocalDocker:false, Logs:false, Logfile:"/Users/sthellwi/Check123/corecheck123/shipped-cli.log", MockSDKClient:false, NoHdr:false, OutputFields:"", RunAsRootOK:false, ShippedHome:"", ShowIDs:false, ShowVersion:false, Server:"https://api.ciscoshipped.io", Token:"ofDhyDNpByutmmaulEmstYrtCfPVxmgp", VM:"docker-compose", Watch:0, ObjType:"local", Command:"status", Arguments:[]string(nil)}
+TRACE 2016/07/05 11:05:18.003686 commands.go:93: Running command(local) subcommand(status) args([]string(nil)) help(false)
+TRACE 2016/07/05 11:05:18.003700 commands.go:162: objDesc.Name = "Local"
+TRACE 2016/07/05 11:05:18.003748 uuidParser.go:206: ==> Using projectId 879141f8-41e5-11e6-aad6-0242ac110005
+TRACE 2016/07/05 11:05:18.003765 uuidParser.go:206: ==> Using serviceId eb38e278-41e5-11e6-aadc-0242ac110005
+TRACE 2016/07/05 11:05:18.003792 local.go:554: Starting LocalService.StatusVM()
+TRACE 2016/07/05 11:05:18.003835 projects.go:273: Directory  contains a .shipped directory
+TRACE 2016/07/05 11:05:18.003900 projects.go:273: Directory /Users/sthellwi/Check123 contains a .shipped directory
+TRACE 2016/07/05 11:05:18.003963 projects.go:270: Using user's home directory /Users/sthellwi as Shipped project directory
+TRACE 2016/07/05 11:05:18.003992 client.go:114: GET https://api.ciscoshipped.io/projects/879141f8-41e5-11e6-aad6-0242ac110005?api_token=ofDhyDNpByutmmaulEmstYrtCfPVxmgp
+TRACE 2016/07/05 11:05:18.559087 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/07/05 11:05:18.559332 config.go:139: Using config file /Users/sthellwi/Check123/.shipped/shipped.ini
+TRACE 2016/07/05 11:05:18.559386 config.go:148: Also using project config file /Users/sthellwi/.shipped/shipped.ini
+TRACE 2016/07/05 11:05:18.559424 config.go:158: Also using home config file /Users/sthellwi/.shipped/shipped.ini
+TRACE 2016/07/05 11:05:18.559439 projects.go:304: Changed to project 879141f8-41e5-11e6-aad6-0242ac110005 directory /Users/sthellwi/Check123
+TRACE 2016/07/05 11:05:18.559468 command.go:23: Executing command: docker-machine status shipped
+TRACE 2016/07/05 11:05:18.675289 compose.go:57: docker-machine shipped is running
+TRACE 2016/07/05 11:05:18.675348 command.go:23: Executing command: docker-machine status shipped
+TRACE 2016/07/05 11:05:18.787948 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 docker-machine-shipped,tcp,localhost,42376,,2376
+TRACE 2016/07/05 11:05:18.826307 compose.go:161: DOCKER_CERT_PATH = /Users/sthellwi/.docker/machine/machines/shipped
+TRACE 2016/07/05 11:05:18.826329 compose.go:161: DOCKER_HOST = tcp://localhost:42376
+TRACE 2016/07/05 11:05:18.826335 compose.go:161: DOCKER_MACHINE_NAME = shipped
+TRACE 2016/07/05 11:05:18.826339 compose.go:161: DOCKER_TLS_VERIFY = 1
+TRACE 2016/07/05 11:05:18.826344 compose.go:102: Docker machine environment setup complete
+TRACE 2016/07/05 11:05:18.826387 memdb.go:227: MemDB shipped.db: Fetched projects[879141f8-41e5-11e6-aad6-0242ac110005].name="Check123"
+TRACE 2016/07/05 11:05:18.826396 cache.go:81: Found 879141f8-41e5-11e6-aad6-0242ac110005=Check123 in projects cache
+TRACE 2016/07/05 11:05:18.826409 memdb.go:227: MemDB shipped.db: Fetched projects[879141f8-41e5-11e6-aad6-0242ac110005].serviceRepoIDs="eb38e278-41e5-11e6-aadc-0242ac110005"
+TRACE 2016/07/05 11:05:18.826420 memdb.go:227: MemDB shipped.db: Fetched services[eb38e278-41e5-11e6-aadc-0242ac110005].name="corecheck123"
+TRACE 2016/07/05 11:05:18.826425 cache.go:81: Found eb38e278-41e5-11e6-aadc-0242ac110005=corecheck123 in services cache
+TRACE 2016/07/05 11:05:18.826452 command.go:23: Executing command: docker ps -a --format {{.ID}}@@{{.Names}}@@{{.Status}}
+TRACE 2016/07/05 11:05:18.853799 config.go:139: Using config file /Users/sthellwi/Check123/corecheck123/.shipped/shipped.ini
+TRACE 2016/07/05 11:05:18.853858 config.go:148: Also using project config file /Users/sthellwi/Check123/.shipped/shipped.ini
+TRACE 2016/07/05 11:05:18.853903 config.go:158: Also using home config file /Users/sthellwi/.shipped/shipped.ini
+ERROR 2016/07/05 11:05:18.853944 commands.go:39: Internal error: runtime error: index out of range
+ERROR 2016/07/05 11:05:18.854045 commands.go:44: See /Users/sthellwi/Check123/corecheck123/shipped-cli.log for stack trace
+TRACE 2016/07/05 11:05:18.854066 commands.go:46: goroutine 1 [running]:
+github.com/CiscoCloud/shipped-cli/commands.Run.func1()
+	/drone/src/github.com/CiscoCloud/shipped-cli/commands/commands.go:41 +0x156
+panic(0x515160, 0xc820010060)
+	/usr/local/gonative/go/src/runtime/panic.go:443 +0x4e9
+github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-common/memdb.byteArrayToValue(0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-common/memdb/memdb.go:424 +0x233
+github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-common/memdb.(*DatabaseRef).get.func1(0xc82043b180, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-common/memdb/memdb.go:220 +0x512
+github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-common/memdb.(*DatabaseRef).doQuery(0xc8204460c0, 0x0, 0xc8200ecc68, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-common/memdb/memdb.go:372 +0xf2
+github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-common/memdb.(*DatabaseRef).get(0xc8204460c0, 0x5c9be0, 0x8, 0x44dd40, 0xc8204d65f0, 0xc8200ecd40, 0x1, 0x1, 0xc8204d6600, 0x1, ...)
+	/drone/src/github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-common/memdb/memdb.go:233 +0x14a
+github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-common/memdb.(*DatabaseRef).GetInt(0xc8204460c0, 0x5c9be0, 0x8, 0x44dd40, 0xc8204d65f0, 0x5b4ad8, 0x7, 0xc820161827, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-common/memdb/memdb.go:169 +0xff
+github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-bootstrap/shipdb.GetHostPort(0xc82040b710, 0x24, 0x5b0a08, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-bootstrap/shipdb/portmgr.go:117 +0xb4
+github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-bootstrap/bootstrap.GetDockerComposeStatusReport(0xc82045f4d0, 0x24, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/vendor/github.com/CiscoCloud/shipped-bootstrap/bootstrap/composeUp.go:247 +0x1900
+github.com/CiscoCloud/shipped-cli/services.(*LocalService).runDockerCommand(0xc8201ca680, 0x5b05a8, 0x6, 0x5b5af8, 0x6, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/drone/src/github.com/CiscoCloud/shipped-cli/services/local.go:643 +0x594
+github.com/CiscoCloud/shipped-cli/services.(*LocalService).StatusVM(0xc8201ca680, 0x0, 0x0, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/services/local.go:556 +0x12d
+github.com/CiscoCloud/shipped-cli/services.(*LocalService).StatusVM-fm(0x0, 0x0, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/services/local.go:244 +0x3c
+github.com/CiscoCloud/shipped-cli/commands.execute(0x0, 0x0, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/commands/commands.go:193 +0xfdd
+github.com/CiscoCloud/shipped-cli/commands.runCommand(0x0, 0x0, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/commands/commands.go:97 +0x31b
+github.com/CiscoCloud/shipped-cli/commands.Run(0x0, 0x0, 0x0, 0x0)
+	/drone/src/github.com/CiscoCloud/shipped-cli/commands/commands.go:55 +0xab
+main.main()
+	/drone/src/github.com/CiscoCloud/shipped-cli/main.go:151 +0xf0e
+
+goroutine 17 [syscall]:
+os/signal.signal_recv(0x0)
+	/usr/local/gonative/go/src/runtime/sigqueue.go:116 +0x132
+os/signal.loop()
+	/usr/local/gonative/go/src/os/signal/signal_unix.go:22 +0x18
+created by os/signal.init.1
+	/usr/local/gonative/go/src/os/signal/signal_unix.go:28 +0x37
+
+TRACE 2016/07/05 11:05:18.854134 memdb.go:106: MemDB shipped.db: Closed
+TRACE 2016/07/05 11:05:18.854142 shipdb.go:117: Closed database shipped.db
+TRACE 2016/07/05 11:05:18.854148 logfile.go:40: Stopped archiving log output to /Users/sthellwi/Check123/corecheck123/shipped-cli.log
